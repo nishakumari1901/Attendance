@@ -1,0 +1,28 @@
+<!DOCTYPE html><html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Attendance Management System</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="login-container">
+        <div class="header">
+            <h2>Daily Attendance</h2>
+            <p> Students daily attendanced is marked here.</p>
+        </div>
+        <p>New User?..</p>
+        <button onclick="window.location.href='register.html'">Create Account</button>
+        <h3>User Login</h3>
+        <form action="dashboard.php" method="POST">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required><label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+        
+        <p><a href="forget_password.php">Forgot Password?</a></p>
+        
+        <button type="submit">Login</button>
+    </form>
+</div>
+</body>
+</html>

@@ -1,0 +1,34 @@
+/* General Styles */ 
+body { 
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #9ae4e8, #2f045a); 
+    display: flex; justify-content: center; 
+    align-items: center; height: 100vh; margin: 0; }
+
+/* Container Styles */ 
+.register-container, .login-container, .dashboard-container { 
+    background: rgba(243, 180, 46, 0.1); 
+    padding: 20px; border-radius: 20px; 
+    backdrop-filter: blur(5px); 
+    box-shadow: 0 6px 15px rgba(252, 249, 250, 0.829); 
+    width: 350px; text-align: center; color: rgb(1, 14, 35); }
+
+h2 { color: #680686;margin-bottom: 20px; font-size: 24px; }
+
+/* Input Fields */ 
+input { width: 90%;  padding: 10px 10px;  margin: 10px 0; 
+    border:#680686;  border-radius: 5px;  font-size: 16px; }
+
+/* Buttons */ 
+button { width: 100%; 
+    padding: 10px; background: linear-gradient(135deg, #a69ea7, #220506); 
+    border: none; color: rgb(217, 226, 207); font-size: 18px; 
+    border-radius: 5px; cursor: pointer; transition: 0.3s; }
+
+button:hover { 
+    background: #2e021c; }
+
+/* Links */ 
+a { color: #f0edee;  text-decoration: none; }
+
+a:hover { text-decoration: underline; }

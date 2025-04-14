@@ -1,0 +1,107 @@
+body {
+    font-family: sans-serif;
+    margin: 20px;
+    margin-left: 10px;
+    display: flex;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    margin-left: 20px;
+}
+
+th, td {
+    border: 1px solid #3e3c3c;
+    padding: 8px;
+    text-align: center;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+}
+
+/*button[type="submit"] {
+    background-color: #cb9ad4;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    align-items: center;
+}
+
+button[type="submit"]:hover {
+    background-color: #f54094;
+    align-items: center;
+}
+
+/* Optional: Responsive table */
+@media (max-width: 600px) {
+    table, thead, tbody, th, td, tr {
+        display: block;
+    }
+
+    thead tr {
+        position: absolute;
+        top: -9999px;
+        left: -9999px;
+    }
+
+    tr { border: 1px solid #ccc; }
+
+    td {
+        border: none;
+        border-bottom: 1px solid #eee;
+        position: relative;
+        padding-left: 50%;
+        text-align: left;
+    }
+
+    td:before {
+        position: absolute;
+        top: 6px;
+        left: 6px;
+        width: 45%;
+        padding-right: 10px;
+        white-space: nowrap;
+        content: attr(data-label);
+        font-weight: bold;
+    }
+    th[scope=row]{
+        text-align: left;
+    }
+}
+.main-content{
+    margin-left: 100px;
+}
+.btn{
+    display: flex;
+    justify-content: flex-end;
+    max-width: 20px 0 10px;
+}
+.btn button{
+    background-color: darkcyan;
+    color: #f2f2f2;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s, transform 0.2s;
+}
+.btn button:hover{
+    background-color:darkolivegreen ;
+    transform: scale(1.05);
+}

@@ -1,0 +1,100 @@
+/* Sidebar Default */
+.sidebar {
+    width: 250px;
+    height: 95%;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+    background: rgb(81, 123, 149);
+    position: fixed;
+    left: 0; top: 0;
+    transition: all 0.3s ease;
+    overflow-x: hidden;
+    padding-top: 20px;
+}
+
+/* Collapsed Sidebar */
+.sidebar.collapsed { width: 60px;
+    padding: 0; overflow: hidden;
+}
+
+/* Content Shift */
+.content {
+    margin-left: 250px;
+    transition: margin-left 0.3s;
+}
+
+/* Adjust content when sidebar is collapsed */
+.sidebar.collapsed + .content {
+    margin-left: 50px;
+}
+/* Move toggle button when sidebar is collapsed */
+.sidebar.collapsed + #toggleBtn {
+    left: 0px;
+}
+.sidebar.collapsed .menu li a span, .sidebar.collapsed .profile p{
+    display: none;
+}
+.sidebar.collapsed .text{
+    display: none;
+}
+.logo {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.logo img {
+    width: 50px;
+    height: 50px;
+}
+
+.logo span {
+    display: block;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.menu {
+    list-style-type: none;;
+    padding: 0;
+    background: linear-gradient(125deg, #8fddc2,#2da1db); 
+}
+
+.menu li { padding: 10px;}
+
+.menu li a {
+    text-decoration: none;
+    color: whitesmoke;
+    display:list-item;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.menu li a.active, .menu li a:hover {
+    background: #563d7c;
+    color: white;
+}
+
+.profile {
+    position: absolute;
+    bottom: 10px;
+    text-align: center;
+    width: 100%;
+}
+
+.profile img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.profile span {
+    display: block;
+    font-weight: bold;
+}
+.content{
+    margin-left: 260px;
+    padding: 20px;
+    transition: all 0.3s;
+}
+#sidebarToggle{
+    padding: 10px;
+}
